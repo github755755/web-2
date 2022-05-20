@@ -73,7 +73,11 @@ a:visited {
 }
 
 .bookiImg {
-  padding-left: 70px;
+  
+  width: auto;
+  height: 75px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 /*fin de la barre de navigation*/
 
@@ -81,17 +85,20 @@ a:visited {
 
 .heberReveTextDiv,
 .villeNatTextDiv {
-  margin-left: 20px;
-  margin-right: 20px;
+
 }
 
 .villeNatTextDiv {
   margin-bottom: 15px;
   margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.heberReveTextDiv {
+.h1 {
   font-weight: bold;
+  margin-left: 20px;
+    margin-right: 20px;
 }
 /*fin zone de texte*/
 
@@ -686,4 +693,32 @@ a:visited {
   .activitesMarseilleDiv {
     justify-content: flex-start;
   }
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+.divheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+
+}
+
+.recherchFiltreContainer{
+  width: 1300px;
+}
+
+.recherchFiltreSection{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .divheader{
+    flex-direction: column;
+  }
+  
 }
